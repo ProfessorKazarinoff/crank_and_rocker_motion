@@ -24,7 +24,7 @@ s = over/absolute(over)
 
 #create the angle array, where the last angle is the number of rotations*2*pi
 angle_minus_last = np.arange(0,rot_num*2*pi,increment)
-R_Angle = np.append(angle_minus_last, rot_num*2*pi)
+R_Angles = np.append(angle_minus_last, rot_num*2*pi)
 
 #coordinates of the crank center point : Point 1
 x1=0;
@@ -35,11 +35,11 @@ x4=d
 y4=0 
 
 
-X2=np.zeros(len(R_Angle)) # array of crank x-positions: Point 2
-Y2=np.zeros(len(R_Angle)) # array of crank y-positions: Point 2
-RR_Angle = np.zeros(len(R_Angle)) # array of rocker arm angles
-X3=np.zeros(len(R_Angle)) # array of rocker x-positions: Point 3
-Y3=np.zeros(len(R_Angle)) # array of rocker y-positions: Point 3
+X2=np.zeros(len(R_Angles)) # array of crank x-positions: Point 2
+Y2=np.zeros(len(R_Angles)) # array of crank y-positions: Point 2
+RR_Angle = np.zeros(len(R_Angles)) # array of rocker arm angles
+X3=np.zeros(len(R_Angles)) # array of rocker x-positions: Point 3
+Y3=np.zeros(len(R_Angles)) # array of rocker y-positions: Point 3
 
 #find the crank and connecting rod positions for each angle
 for index,R_Angle in enumerate(R_Angle, start=0):
