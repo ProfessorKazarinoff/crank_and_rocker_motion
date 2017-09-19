@@ -42,7 +42,7 @@ X3=np.zeros(len(R_Angles)) # array of rocker x-positions: Point 3
 Y3=np.zeros(len(R_Angles)) # array of rocker y-positions: Point 3
 
 #find the crank and connecting rod positions for each angle
-for index,R_Angle in enumerate(R_Angle, start=0):
+for index,R_Angle in enumerate(R_Angles, start=0):
 
         theta1 = R_Angle
         x2 = r*cos(theta1) # x-cooridnate of the crank: Point 2
